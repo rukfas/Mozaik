@@ -1,0 +1,105 @@
+
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active >
+a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	color: #ffffff; /*BACKGROUND color for active*/
+	background-color: rgb(192, 192, 192);
+
+}
+
+/*boja za aktivno polje*/
+.navbar: .navbar-toggle:focus .icon-bar {
+	background-color:  rgb(192, 192, 192);
+
+}
+/*ovo je boja za dugme dole */
+.navbar-toggle {
+	background-color:  rgb(192, 192, 192) !important;
+}
+
+
+
+
+
+.navbar-inverse{
+	background-color: rgba(104,130,158,0.7) !important;
+
+}
+
+/*Remove rounded coners*/
+
+nav.sidebar.navbar {
+	border-radius: 0px;
+	border: 0px;
+
+	
+
+}
+.collapse {
+	background-color: rgba(193, 36, 157, 0.04) !important;
+}
+
+nav.sidebar, .main{
+	-webkit-transition: margin 200ms ease-out;
+	-moz-transition: margin 200ms ease-out;
+	-o-transition: margin 200ms ease-out;
+	transition: margin 200ms ease-out;
+
+}
+
+/* Add gap to nav and right windows.*/
+.main{
+	padding: 10px 10px 0 10px;
+}
+
+/* .....NavBar: Icon only with coloring/layout.....*/
+
+/*small/medium side display*/
+
+
+@media (min-width: 768px) {
+
+	/*Allow main to be next to Nav*/
+	.main{
+		width: calc(100% - 200px); /*keeps 100% minus nav size*/
+		margin-left: 200px;
+		display: none;
+	}
+
+	/*Show all nav*/
+	nav.sidebar{
+		margin-left: 0px;
+		float: left;
+		display: none;
+	}
+	/*Show hidden items on nav*/
+	nav.sidebar .forAnimate{
+		opacity: 1;
+		display: none;
+	}
+}
+
+nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
+	color: #CCC;
+	background-color: transparent;
+	display: none;
+}
+
+nav:hover .forAnimate{
+	opacity: 1;
+	display: none;
+}
+section{
+	padding-left: 15px;
+	display: none;
+}
+
+nav.sidebar.navbar{
+  position:relative;
+  top:0;
+  left:0;
+  width:100%;
+  height:auto;
+	text-align: center;
+
+}

@@ -1,0 +1,24 @@
+/*
+.main-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.main-content.ng-enter,
+.main-content.ng-leave {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.main-content.ng-enter {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.main-content.ng-enter-active,
+.main-content.ng-leave,
+.main-content.ng-leave-active {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.pop.ng-leave-active {}*/

@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Mozaik</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href="lightbox.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tillana" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Antic+Didone" rel="stylesheet">
+	<link href="MENU.css" rel="stylesheet">
+    
+   
+    <script src="js/jquery-3.1.1.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css"></script>
+  <script src="js/ucitavanje.js"></script>   
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+	<script src="js/proba2.js"></script>
+	<script src="js/proba.js"></script>
+    
+</head>
+    
+<body ng-app="mozaik" ng-controller="mozaikCtrl">
+    <div id="skiniga" class="se-pre-con"></div>
+    
+    
+    
+ <header> <a href="#/">  <img id="logo" class="img-responsive home" src="images/logo.png"></a></header>
+    
+    
+    <div class="mobilni">
+    
+    
+    
+    <div class="meni"></div>
+         
+    
+    </div>
+     <!-- THEEEEEEEEEEE MAINNNNNNNNNNNN THINGGGGGGGGGGGGG -->
+    <div id="main-container" class="container-fluid">
+        <div class="row">
+        
+        <div class="main-content col-xs-7" ng-view>
+           
+           <!-- routing Contet-->
+                
+                
+
+        </div>
+            
+    <!-- THEEEEEEEEEEE MAINNNNNNNNNNNN THINGGGGGGGGGGGGG -->
+            
+            
+     <!-- Menu -->
+            
+        <div class="menu-place col-xs-4">
+            
+            <div class="row">
+                
+                
+                
+                
+                <div class="nista"></div>
+                <div class="language col-xs-12">
+
+                            <div class="navlang">
+                                <ul>
+                               <li> <a href="">ENG</a> </li> 
+                                <li> <a>/</a></li>
+                              <li>  <a href="">SRB</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                  <div class="menu col-xs-12">
+                    <nav class="nav1">
+                            
+                            <ul> 
+                                
+                                <li id="home"><a class="home aktivno" href="#/">Pocetna</a></li>
+                               <li id="mozemoze"><a class="mozemoze"  href="#/mozaik">Mozaik</a></li>
+                                <!--<li id="modeli"><a class="modeli"  href="#/modeling">Modeling</a></li>-->
+                                
+                                 <li id="marketing"><a class="marketing"  href="#/marketing">Makreting</a></li>
+                                <li id="dizajn"><a class="dizajn" href="#/multimedia">Dizajn i Multimedia</a></li>
+                                <li id="socijal"><a class="socijal" href="#/web">Social i Web dizajn</a></li>
+                                <li id="fotoart"><a class="fotoart" href="#/fotoart">Foto Art</a></li>
+                                <li id="kontakt"><a class="kontakt" href="#/contact">Kontakt</a></li>
+                            
+                            </ul>
+                            
+                          <div id="modeling"><a>Mozaik&nbsp;studio</a></div>
+                        
+                        </nav>
+                      
+                       <nav class="nav2 text-hidden">
+                            
+                            <ul> 
+                                
+                                <li ><a ng-click="expandWindow(0)"   class="">Studio</a></li>
+                               
+                                <li><a  ng-click="expandWindow(1)">Outdoor</a></li>
+                                 <li><a ng-click="expandWindow(2)">Proizvodi</a></li>
+                            
+                               
+                            
+                            </ul>
+                            
+                        
+                        </nav>
+                      
+                      <nav class="nav3 text-hidden">
+                            
+                            <ul> 
+                                
+                                <li><a ng-click="expandWindow(0)">Promocija brenda</a></li>
+                               
+                                <li><a ng-click="expandWindow(1)">Promo kampanje</a></li>
+                                 <li><a ng-click="expandWindow(2)">Direktni marketing</a></li>
+                            
+                               
+                            
+                            </ul>
+                            
+                        
+                        </nav>
+                      
+                       <nav class="nav4 text-hidden">
+                            
+                            <ul> 
+                                
+                                <li><a ng-click="expandWindow(0)">Graficki dizajn</a></li>
+                               
+                                <li><a ng-click="expandWindow(1)">Izrada reklama</a></li>
+                                 <li><a ng-click="expandWindow(2)">Brendiranje</a></li>
+                            
+                               
+                            
+                            </ul>
+                            
+                        
+                        </nav>
+                      
+                      <nav class="nav5 text-hidden">
+                            
+                            <ul> 
+                                
+                                <li><a ng-click="expandWindow(0)">Web dizajn</a></li>
+                               
+                                <li><a ng-click="expandWindow(1)">Social marketing</a></li>
+                                 <li><a ng-click="expandWindow(2)">SEO optimizacija</a></li>
+                            
+                               
+                            
+                            </ul>
+                            
+                        
+                        </nav>
+                      
+                      
+                      <nav class="nav6 text-hidden">
+                            
+                            <ul> 
+                                
+                                <li><a ng-click="expandWindow(0)">Agencija</a></li>
+                               
+                                <li><a ng-click="expandWindow(1)">Nas tim</a></li>
+                                 <li><a ng-click="expandWindow(2)">Saradnja</a></li>
+                            
+                               
+                            
+                            </ul>
+                            
+                        
+                        </nav>
+                    
+                
+                </div>
+                
+                  <div class="social col-xs-12">
+                    
+                    <a target="_blank" href="https://www.instagram.com/mozaik_studio/" class="insta"><img src="images/social/insta.png"></a>
+                    <a target="_blank" href="https://www.facebook.com/mozaikstudioo?fref=ts" class="fb"><img src="images/social/s_3.png"></a>
+                    <a target="_blank" href="https://twitter.com/MozaikStudioRS" class="twitter"><img src="images/social/twitter.png"></a>
+                
+                </div>
+            
+            </div>
+            
+            
+        </div>
+     <!-- Menu -->     
+            
+    <!-- Banner --> 
+            
+            
+        <div class="banner col-xs-1">
+            
+            <div id="site1"><a href="#"></a></div>
+            <div id="site2"><a href="#"></a></div>
+            
+        </div>
+            
+    <!-- Banner --> 
+            
+        </div>
+       
+   </div>
+   
+	<footer>Sva prava zadržana © 2016. mozaik.rs - powered by #CodingBad</footer>
+	<div  class="mobilni"> 
+
+
+		<!--                  MENU                         -->  
+		<div id="pozadina" class="meni">
+			<nav class="navbar navbar-inverse sidebar" role="navigation">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+						<a class="navbar-brand slicica" href="#/">  <img  class="img-responsive " src="images/logo.png"></a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="index.html">Pocetna<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+							<li ><a href="#jedan">Mozaik<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+							<li ><a href="#cetiri">Modeling<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
+							<li class="dropdown">
+								<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
+
+						</li>
+					<li><a data-toggle="collapse" data-target=".navbar-collapse" href="#sedam">Marketing<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+					<li ><a href="#deset">Dizajn i Multimedija<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+
+					</li>
+				<li ><a href="#trinaest">Social i web dizajn<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+
+				</li>
+			<li ><a href="#sesnaest">Foto art<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+
+			</li>
+		<li ><a href="#map">Kontakt<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+
+		</li>
+	</ul>
+	</div>
+</div>
+
+</nav>
+
+</div>
+
+<!--             			 KRAJ    MENU                           -->
+<!-- -------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------- -->
+<!--                         POZADINA                               -->
+
+<div  class="pozadina"> 
+	<!--
+<div class="text text-hidden">
+<h1>Welcome to the mozaik.rs</h1>
+</div>
+-->
+	<div class="text ng-scope" style="display: block;">
+		<h1>Welcome to mozaik.rs</h1>
+
+		<div id="carousel-example" class="stoposto carousel slide" data-ride="carousel">
+			<!-- Wrapper for slides --> 
+
+			<div class="slajds row">
+				<div class="ovobre col-xs-offset-3 col-xs-6">
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="text-slidera carousel-content" style="height: 266.734px;">
+								<div class="elma">
+									<p>Kreativna Biznis i Marketing Agencija </p>
+
+								</div>
+								<div class="readx"> <a class="rmore" href="#jedan">Read more...</a></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="carousel-content" style="height: 266.734px;">
+								<div class="elma">
+									<p>Ozbiljan tim mladih i kreativnih ljudi!  </p>
+
+								</div>
+								<div class="readx">
+									<a class="rmore" href="#dva">Read more...</a></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="carousel-content" style="height: 266.734px;">
+								<div class="elma">                            
+									<p>Saradnja sa nama garantuje uspeh!  </p>
+
+								</div>
+								<div class="readx"> <a class="rmore" href="#/mozaik">Read more...</a></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Controls --> <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+
+		</div>
+
+	</div>
+</div>
+<!--             			 KRAJ POZADINA                          -->
+<!-- -------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------- -->
+<!-- 			   		 	    MOZAIK 					  			-->
+
+<div id="jedan" >
+	<div class="sidebar51"> <h4> agencija</h4></div>
+	<div class="sidebar50"> <h4> ekspertiza</h4></div>
+	<div class="sidebar3"> <h4> zanimljivosti</h4></div> 
+</div>
+<div  class="chs ispodjedan col-sm-12"> <div class="chs-content"> <h4>O nama</h4> <p>Studio Mozaik osnovan je krajem 2016 godine na ideju.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p> <div class="row"> <div class="col-xs-3"> <img src="images/timovi/mozaik1.jpg" class="onamaa img-responsive img-rounded"> </div> <div class="col-xs-9"> <blockquote> <p><strong>Mozaik</strong> has been created to help other businesses get the most out of technology. We believe that our potential and advanced knowledge along with our entrepreneurial spirit is the key to our excellence, which is shown in every product or service we provide.</p> <footer>CEO of Mozaik, <cite title="Source Title">Amel Mavric</cite></footer> </blockquote> </div> </div></div> </div>
+
+<div id="dva">
+	<div class="sidebar51"> <h4> agencija</h4></div>
+	<div class="sidebar50"> <h4> ekspertiza</h4></div>
+	<div class="sidebar3"> <h4> zanimljivosti</h4></div>
+
+</div>
+<div id="ispoddva" class="chs col-sm-12"> <div class="chs-content"> <h5>Nas tim</h5> <p>Mozaik je tim mladih, ambicioznih, kreativnih i iskusnih ljudi koji ozbiljno shvataju svoj posao, nastoje vam pomoci da Vasu ideju proizvedete u remek delo. Mi razumemo svoj posao, takodje nastojimo na tome da i vas razumemo i da nam pruzimo nas maksimum, pratimo najnovije trendove na svim poljima na kojima delujemo i trudimo se da budemo sto aktuelniji i funkcionalniji.</p> <div class="row"> <div class="nastim"> <img src="images/timovi/mozaik1.jpg" class="img-responsive "> <h4>Amel Mavric</h4> <p>CEO and Founder</p> <p>Marketing expert</p> <div id="jedan1"> <a target="_blank" href="https://www.facebook.com/mavric.amel?fref=ts"><img src="images/social/fbperson.png"></a></div> <div id="dva2"> <a target="_blank" href="https://www.instagram.com/amelmavric/"><img src="images/social/instaperson.png"></a></div> <div id="tri3"> <a target="_blank" href="https://plus.google.com/109592833712255285816"><img src="images/social/gperson.png"></a></div> </div> <div class="nastim"> <img src="images/timovi/mozaik3.jpg" class="img-responsive "> <h4>Almedina Begovic</h4> <p>Model Scout</p> <p>Modeling Expert </p> <div id="jedan1"> <a target="_blank" href="https://www.facebook.com/Mozaik-906685842764868/?fref=ts"><img src="images/social/fbperson.png"></a></div> <div id="dva2"> <a target="_blank" href="https://www.instagram.com/mozaik_studio/"><img src="images/social/instaperson.png"></a></div> <div id="tri3"> <a target="_blank" href="https://plus.google.com/u/0/103876699623226209284"><img src="images/social/gperson.png"></a></div> </div> <div class="nastim"> <img src="images/timovi/mozaik2.jpg" class="img-responsive "> <h4>Amel Muminovic</h4> <p>Web Developer</p> <p>Freelancer</p> <div id="jedan1"> <a target="_blank" href="https://www.facebook.com/Ammmce"><img src="images/social/fbperson.png"></a></div> <div id="dva2"> <a target="_blank" href="https://www.instagram.com/ammce"><img src="images/social/instaperson.png"></a></div> <div id="tri3"> <a target="_blank" href="https://plus.google.com/u/0/114556458888646673961"><img src="images/social/gperson.png"></a></div> </div> </div> </div> </div>
+<div id="tri">
+	<div class="sidebar51"> <h4> agencija</h4></div>
+	<div class="sidebar50"> <h4> ekspertiza</h4></div>
+	<div class="sidebar3"> <h4> zanimljivosti</h4></div>
+
+</div>
+<div id="ispodtri" class="chs col-sm-12"> <div class="chs-content"> <h5>Zelite da saradjujete sa nama?</h5> <p>Mozaik studio je otvoren za svaki vid saradnje. Ukoliko ste zainteresovani, popunite formu, i mi cemo razmotriti vasu ponudu, i odgovoriti u najkracem mogucem roku</p> <div class="row"> <div class="lijevo col-xs-6"> <h3>Forma</h3> <form name="form" method="post" action="http://formmail.mozaikstudio.rs" accept-charset="iso-8859-1" class="biznis-forma ng-pristine ng-valid"> <input type="hidden" name="recipient" value="info@mozaikstudio.rs"> <input type="hidden" name="redirect" value="http://www.mozaikstudio.rs/hvala.html"> <div class="form-group"> <input type="email" class="form-control" id="inputEmail" placeholder="Unesite vas email" name="email"> </div> <div class="form-group"> <input type="email" class="form-control" id="inputName" placeholder="Unesite vase ime" name="name"> </div> <div class="form-group"> <label for="sel1">Izaberite temu</label> <select name="subject" class="form-control" id="sel1"> <option value="Modeling">Modeling</option> <option value="Marketing">Marketing</option> <option value="Dizaj i Multimedia">Dizaj i Multimedia</option> <option value="Web Development">Web Development</option> <option value="Foto Art">Foto Art</option> </select> </div> <div class="form-group"> <textarea class="form-control" id="comment" placeholder="Opisite vasu ideju za poslovnu saradnju"></textarea> </div> <div class="form-group"> <button type="submit" class="btn btn-success">Posalji</button> </div> </form> </div> <div class="dijesno col-xs-6"> <h3>Nasi partneri</h3> <div class="partneri col-xs-5"> <div class="partner1"> <img src="images/partneri/sky.jpg" class="img responsive"> <p>Sky store - Novi Pazar</p> </div> </div> <div class="partneri col-xs-5"> <div class="partner1"> <img src="images/partneri/event.jpg" class="img responsive"> <p>Mozaik Event - Novi Pazar</p> </div> </div><div class="partneri col-xs-5"> <div class="partner1"> <img src="images/partneri/heli.jpg" class="img responsive"> <p>Heli Studio - Novi Pazar</p> </div> </div> <div class="partneri col-xs-5"> <div class="partner1"> <img src="images/partneri/sminkeraj.jpg" class="img responsive"> <p>Sminkeraj - Novi Pazar</p> </div> </div> </div> </div> </div> </div>
+
+
+<!--    					KRAJ MOZAIKA							-->
+<!-- -------------------------------------------------------------- -->   
+<!-- -------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------- -->
+<!-- 			   		 	  MODELING 								-->
+
+<!--
+<div id="cetiri">
+	<div class="sidebar4"> <h4> studijsko fotografisanje</h4></div>
+	<div class="sidebar5"> <h4> fotografisanje na terenu</h4></div>
+	<div class="sidebar6"> <h4> fotografisanje proizvoda</h4></div>
+</div>
+<div class="ispodcetiri"> Ovde safasf s nesasfto !</div>
+<div id="pet">
+	<div class="sidebar4"> <h4> studijsko fotografisanje</h4></div>
+	<div class="sidebar5"> <h4> fotografisanje na terenu</h4></div>
+	<div class="sidebar6"> <h4> fotografisanje proizvoda</h4></div>
+</div>
+<div id="ispodpet"> safawf wfa waf awf</div>
+<div id="sest">
+	<div class="sidebar4"> <h4> studijsko fotografisanje</h4></div>
+	<div class="sidebar5"> <h4> fotografisanje na terenu</h4></div>
+	<div class="sidebar6"> <h4> fotografisanje proizvoda</h4></div>
+</div>
+<div id="ispodsest">wsafwafwaf aw faw aw</div>
+-->
+
+
+
+
+
+
+<!--    					KRAJ MODELING					-->
+<!-- -------------------------------------------------------------- --> 
+<!-- -------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------- --><!-- -------------------------------------------------------------- -->  
+
+<!-- 			   		 	  MARKETING 								-->
+
+<div  class="sedam" id="sedam">
+	<div class="sidebar7"> <h4> promocija brenda</h4></div>
+	<div class="sidebar8"> <h4> promo kampanje</h4></div>
+	<div class="sidebar9"> <h4> direktni marketing</h4></div>
+</div>
+<div class="ispodsedam">
+	<div class="lhs  col-xs-6"> <div class="lhs-content"> <h4>O Brandingu</h4> <p>Sustina Brenda je prepoznatljivost, nesto sto ce ljudi videti I povezati sa vasom firmom. Pomislili biste da je jedino resenje placanje velikih suma novca televizijama koje ce pustati vase reklame u udarnim terminima. Da, moramo priznati - efekat takvog marketinga je zaista veliki, ali jos je veci broj ljudi koji taj novac nemaju. Zato moramo biti kreativni i domisljati.</p> </div> </div>
+	<div class="rhs  col-xs-12"> <div class="rhs-content"> <h4>Primeri Brendinga</h4> <div class="brandingg"> <div class="col-xs-4"> <img class="img-responsive img-rounded" src="images/Marketing/1.jpg"> </div> <div class="col-xs-4"> <img class="img-responsive img-rounded" src="images/Marketing/2.jpg"> </div> <div class="col-xs-4"> <img class="img-responsive img-rounded" src="images/Marketing/3.jpg"> </div> <div class="col-xs-4"> <img class="img-responsive img-rounded" src="images/Marketing/4.jpg"> </div> <div class="col-xs-4"> <img class="img-responsive img-rounded" src="images/Marketing/5.jpg"> </div> <div class="col-xs-4"> <img class="img-responsive img-rounded" src="images/Marketing/6.jpg"> </div> </div> </div> </div>
+	<div class="chs col-sm-12"> <img src="images/Marketing/brendiranjequote.PNG" class="brendiranjeimg img-responsive img-rounded"> </div> </div>
+<div id="osam">
+	<div class="sidebar7"> <h4> promocija brenda</h4></div>
+	<div class="sidebar8"> <h4> promo kampanje</h4></div>
+	<div class="sidebar9"> <h4> direktni marketing</h4></div>
+</div>
+<div id="ispodosam" class="row"> <div class="chs col-sm-12"> <div class="chs-content"> <h3>Promo kampanje</h3> <p>I ako bi vecina luksuznih modnih brendova zelela da opstane na duze staze bez reklamnih kampanja na koje troše poprilcan deo novca, ta opcija jos nije, niti će biti aktuelna. Slavno ime I uspesna tradicija mozda prodaju brend, ali uraditi odlicnu reklamnu kampanju pitanje je prestiza, uspeha, pa i tog slavnog imena. (Zato se uvek angazuju najbolji u svom poslu ne bi li ceo zadatak bio na visini profesionalan i vizuelno originalan.)</p> <img src="images/Marketing/kampanje.png" class="svarc img-responsive"> </div> </div> </div>
+
+<div id="devet">
+	<div class="sidebar7"> <h4> promocija brenda</h4></div>
+	<div class="sidebar8"> <h4> promo kampanje</h4></div>
+	<div class="sidebar9"> <h4> direktni marketing</h4></div>
+</div>
+<div id="ispoddevet" class="row"> <div class="lhs col-xs-6"> <div class="lhs-content"> <h4>Direktni marketing</h4> <p>Direktni marketing je jedno od najdinamicnijih podrucja marketinga. Nazivi poput: vodjeni marketing, marketing jedan na jedan ili aktivno oglasavanje na najbolji nacin odrzavaju osnovnu karakteristiku direktnog marketinga – izravnu, neposrednu komunikaciju s kupcem.</p> </div> </div>
+	<div class="col-xs-6"> <img src="images/Marketing/direktni1.jpg" class="img-responsive"> </div>
+
+
+	<div class="rhs col-xs-6"> <div class="rhs-content"> <h4>Sta obuhvata?</h4> <div class="directmarketing">  <ul> <li>direktnu postu/telemarketing</li> <li>prodaju od vrata do vrata</li> <li>kupovinu preko interneta</li> <li>distribuciju raznih vrsta letaka</li> <li>katalosku prodaju</li> </ul> </div> </div> </div> <div class="chs col-xs-6">  <div class="col-xs-6"> <img src="images/Marketing/direktni2.jpg" class="img-responsive"> </div> </div> </div>
+
+
+
+
+
+
+<!--    					KRAJ MARKETING					-->
+
+
+<!-- 			   		 	  DIZAJN I MULTIMEDIJA 						-->
+
+<div id="deset">
+	<div class="sidebar10"> <h4> graficki dizajn</h4></div>
+	<div class="sidebar11"> <h4> izrada reklama</h4></div>
+	<div class="sidebar12"> <h4> brendiranje</h4></div>
+</div>
+
+<div  class="row ispoddeset"> <div class="lhs col-sm-6"> <div class="lhs-content"> <h4>Graficki Dizajn</h4> <p>Atraktivan dizajn vaseg identiteta je ujedno i promocija Vase firme, njenih proizvoda i usluga ili Vasa licna reklama. Ulaganje u vizuelni identitet vaseg preduzeca ili proizvoda je jednokratna, ali dugorocna investicija koja gradi uspesan imidz i razvija njen brend.</p> </div> </div> <div class="rhs col-sm-6"> <div class="rhs-content"> <h4>Tehnologije koje koristimo:</h4> <div class="directmarketing"> <ul> <li>Adobe PhotoShop</li> <li>Adobe Illustrator</li> <li>Adobe Lightroom</li> <li>Adobe Premiere / After Effects</li> <li>Sony Vegas</li> <li>CorelDRAW</li> </ul> </div> </div> </div> <div class="chs col-xs-12"> <h3>Nas portfolio</h3> <div class="portfolio"> <div class="col-xs-3"> <img src="images/graficki/1.png" class="img-responsive img-rounded"> <p>Green Bot <br> 2016</p> </div> <div class="col-xs-3"> <img src="images/graficki/2.png" class="img-responsive img-rounded"> <p>Colorado <br> 2016</p> </div> <div class="col-xs-3"> <img src="images/graficki/3.png" class="img-responsive img-rounded"> <p>Blue Bear <br> 2016</p> </div> <div class="col-xs-3"> <img src="images/graficki/4.jpg" class="img-responsive img-rounded"> <p>Zagreb meetup <br> 2016</p> </div> </div> </div> </div> 
+<div id="jedanaest">
+	<div class="sidebar10"> <h4> graficki dizajn</h4></div>
+	<div class="sidebar11"> <h4> izrada reklama</h4></div>
+	<div class="sidebar12"> <h4> brendiranje</h4></div>
+</div>
+
+<div id="ispodjedanaest" class="row"> <div class="chs col-sm-12"> <div class="chs-content"> <h3>Izrada reklama</h3> <p>Svedoci smo da danas video marketing ima najveceg uticaja na kupce. Bilo da se to radi o detetu, tinejdzeru, odrasloj osobi ili penzioneru, ono sto ih svakako ostavlja bez teksta, i sto u njima budi zelju za kupovinom proizvoda, jeste odlicno osmisljena reklama. <strong>Nas studio vam nudi</strong> mogucnost da sami osmislite kako bi vasa reklama izgleda,a mi cemo vase ideje i fantazije pretvoriti u stvarnost. <strong>Nas tim</strong> ce se pobrinuti da to izgleda na svetskom nivou uz nase glumce, sminkere, profesionalne montazere i kamermane, kao i mnoge druge. Angazujte nas i uverite se!</p> <iframe width="300" height="200" src="https://www.youtube.com/embed/dEevxnXHeXI" frameborder="0" allowfullscreen=""></iframe> </div> </div> </div>
+
+
+
+
+
+
+<div id="dvanaest">
+	<div class="sidebar10"> <h4> graficki dizajn</h4></div>
+	<div class="sidebar11"> <h4> izrada reklama</h4></div>
+	<div class="sidebar12"> <h4> brendiranje</h4></div>
+</div>
+<div class="row" id="ispoddvanaest"> <div class="its3am"> <div class="col-xs-4"> <img src="images/samsung.png" class="img-responsive img-rounded"> </div> <div class="col-xs-4"> <img src="images/lumia.jpg" class="img-responsive img-rounded"> </div><div class="col-xs-4"> <img src="images/iphonee.png" class="img-responsive img-rounded"> </div></div> <div class="chs col-xs-12"> <div class="chs-content"> <h3 >Samsung ili iPhone?</h3> <p><strong>Sigurno ste culi za ova dva svetska brenda, i pitate se kako su postali tako poznati?</strong><br>Secate se vremena kada je Nokia bila dominantna, a Ajfon i Samsung da gotovo nisu ni postojali? Vecina danasnjih svetskih brendova poput Sony-a, Windows-a, Samsunga, itd... koristi slicne hardverske komponente, ali upravo <strong>Brendiranje</strong> je kljucna stvar koja je lansirala Ajfon i Samsung toliko daleko. Zelite li da i vi uanpredite vas biznis? Konsultujte se sa nama!</p> </div> </div> <div class="fooder col-xs-12"></div> </div>
+
+
+
+
+<!--    					KRAJ DIZAJN I MULTIMEDIJA					-->
+
+
+<!-- 			   		 	  SOCIAL I WEB DIZAJN						-->
+
+<div id="trinaest">
+	<div class="sidebar13"> <h4> web dizajn</h4></div>
+	<div class="sidebar14"> <h4> social marketing</h4></div>
+	<div class="sidebar15"> <h4> SEO optimizacija</h4></div>
+</div>
+
+
+<div class="ispodtrinaest row"> <div class="lhs col-sm-6"> <div class="lhs-content"> <h4>Web Dizajn</h4> <p>Web dizajn je opsteprihvaceni pojam koji obuhvata razlicite vestine, sandarde i discipline koje se koriste u izradi web stranice. Firma koja danas ne poseduje svoj web portal, moze se smatrati da zapravo ni ne postoji. Budite ispred ostalih, obezbedite sebi najbolju web prezentaciju i prosirite svoj biznis uz nasu strucnu pomoc! </p> </div> </div> <div class="rhs col-sm-6"> <div class="rhs-content"> <h4>Tehnologije koje koristimo</h4> <div class="pola col-sm-6"> <h5>Front End Techs</h5> <ul> <li>HTML 5 - CSS</li> <li>JavaScript</li> <li>ReactJS</li> <li>Angular 2</li> </ul> </div> <div class="pola col-sm-6"> <h5>Back End Techs</h5> <ul> <li>NodeJS</li> <li>.NET</li> <li>PHP</li> <li>MongoDB, MySQL</li> </ul> </div> </div> </div> <div class="chs col-sm-12"> <h3>Kako mi radimo?</h3> <img src="images/razvoj.png" class="img-responsive"> </div>  </div>
+
+
+
+<div id="cetrnaest">
+	<div class="sidebar13"> <h4> web dizajn</h4></div>
+	<div class="sidebar14"> <h4> social marketing</h4></div>
+	<div class="sidebar15"> <h4> SEO optimizacija</h4></div>
+</div>
+
+
+
+<div id="ispodcetrnaest" class="row"> <div class="chs"> <div class="chs-content"> <div class="row"> <div class="col-xs-4"> <img src="images/socialmarketing1.jpg" class="img-responsive img-rounded"> </div> <div class="col-xs-4"> <img src="images/socialmarketing3.jpg" class="img-responsive img-rounded"> </div> <div class="col-xs-4"> <img src="images/socialmarketing2.jpg" class="img-responsive img-rounded"> </div> </div> <h4>Izgleda vam poznato? Zelite da i drugi vide vas?</h4> <p>Marketing u velikoj meri ukljucuje drustvene medije. Marketinski strucnjaci koriste sadrzaj da bi prosirlili svoje poruke putem drustvenih medija. Izmedju te dve oblasti postoji dosta preklapanja, ali i dosta razlika. Ukoliko zelite da se i vasa firma promovise na socijalnim mrezama, na pravom ste mestu. <strong>Ako ste zainteresovani za najbolje i najbrze usluge Social Marketinga, vec od danas mozete ciljati odredjenu grupu ljudi, ili ljude sa odredjene lokacije, bilo gde u svetu, koji ce videti vas proizvod, a samim tim i uvecati vas profit. Bilo da zelite da se reklamirate na Instagramu, Facebook-u, Youtube-u, Google-u, ili na nekom drugom mestu, Ne oklevajte sa sigurnim profitom! Kontaktirajte nas</strong> </p> </div> </div> </div>
+
+
+<div id="petnaest">
+	<div class="sidebar13"> <h4> web dizajn</h4></div>
+	<div class="sidebar14"> <h4> social marketing</h4></div>
+	<div class="sidebar15"> <h4> SEO optimizacija</h4></div>
+</div>
+
+<div id="ispodpetnaest" class="row"> <div class="lhs col-sm-6"> <div class="lhs-content"> <h4>Glavni cilj optimizacije sajta</h4> <p>Glavni cilj je da bi vas sajt privukao sto vise kvalitetnih posetilaca sa internet pretrazivaca, tj. onih posetilaca, kojima je Vas sajt i namenjen (a ne po svaku cenu navuci sto vise bilo kakvih posetilaca). Kako to postici? Kontaktirajte nas i otkrijte!</p> </div> </div> <div class="rhs col-sm-6"> <div class="rhs-content"> <h4>Zasto vam je SEO neophodan?</h4> <p>Promet na internetu je vecinom vodjen na osnovu rezultata pretrage na komercijalnim pretrazivacima, kao sto su Google ili Yahoo. Ako se Vas sajt ne pojavljuje u ovim pretrazivacima kada se u njih ukucaju kljucne reci vezane za tematiku Vase internet prezentacije, Vas sajt gubi neverovatan broj potencijalnih posetilaca.</p> </div> </div> <div class="chs col-sm-12"> <h3>SEO u 4 koraka</h3> <div class="koraci col-xs-3"> <img src="images/korak1.svg" class="img responsive"> <p>Kontaktirate nas mejlom ili telefonom i dogovorimo saradnju</p> </div> <div class="koraci col-xs-3"> <img src="images/korak2.svg" class="img responsive"> <p>Analiziramo pocetno stanje</p></div> <div class="koraci col-xs-3"><img src="images/korak3.svg" class="img responsive"> <p>Krecemo sa mesecnom SEO optimizacijom i zajedno pratimo rezultate</p></div> <div class="koraci col-xs-3"> <img src="images/korak4.svg" class="img responsive"> <p>Pocinjete da dobijate sve vise klijenata/kupaca zbog uvecane ciljane posete sajtu</p></div> </div> <div class="fooder col-xs-5"></div> </div>
+
+
+<!--    					KRAJ SOCIAL I WEB DIZAJN					-->
+
+
+<!-- 			   		 	  FOTO ARTa									-->
+
+<div id="sesnaest">
+	<div class="sidebar16"> <h4> studio</h4></div>
+	<div class="sidebar17"> <h4> outdoor</h4></div>
+	<div class="sidebar18"> <h4> proizvodi</h4></div>
+</div>
+
+
+<div class="row ispodsesnaest"> <div class="lhs col-sm-6"> <div class="lhs-content"> <h4>Studijsko Fotografisanje</h4> <p>Sigurno ste videli da većina glumaca na sceni izgleda sjajno. Savršeno glatka koža, blistav ten… Ali za to su zaslužni dobri i jaki reflektori. Upravo u foto studiju mogućnosti za fotografisanje su neograničeni. Igra svetlosti i senke može proizvesti savršenu fotografiju. Kod nas u studiju možete se fotografisati pod rasvetom vrhunskog kvaliteta. Nije bitno samo posedovati dobar alat, već i majstora koji će taj alat dobro iskoristiti. Tako da odaberite pravog fotografa i uživajte. </p> </div> </div> <div class="rhs col-sm-6"> <div class="rhs-content"> <h4>Galerija</h4> <div class="gallery"> <div class="row"> <div class="col-xs-4"> <a href="images/fotoart/studijsko/479ff450-2103-4c2b-9f94-591ba9a01489.jpg" data-title="Slike sa photoshootinga" data-lightbox="Vacation"><img src="images/fotoart/studijsko/479ff450-2103-4c2b-9f94-591ba9a01489.jpg" class="img-rounded img-responsive"></a> </div> <div class="col-xs-4"> <a href="images/fotoart/studijsko/6f9b4e94-c03d-404c-9021-4abdc81fee85.jpg" data-title="My first Caption" data-lightbox="Vacation"><img src="images/fotoart/studijsko/6f9b4e94-c03d-404c-9021-4abdc81fee85.jpg" class="img-rounded img-responsive"></a> </div> <div class="col-xs-4"> <a href="images/fotoart/studijsko/950892d8-d156-47e9-b504-587163c31445.jpg" data-title="My first Caption" data-lightbox="Vacation"><img src="images/fotoart/studijsko/950892d8-d156-47e9-b504-587163c31445.jpg" class="img-rounded img-responsive"></a> </div> </div> <div class="row"> <div class="col-xs-4"> <a href="images/fotoart/studijsko/987e2c4f-1ca8-4d9f-8236-2d15251162d5.jpg" data-title="My first Caption" data-lightbox="Vacation"><img src="images/fotoart/studijsko/987e2c4f-1ca8-4d9f-8236-2d15251162d5.jpg" class="img-rounded img-responsive"></a> </div> <div class="col-xs-4"> <a href="images/fotoart/studijsko/a13ee5f7-9643-4acf-a141-2ad2d6caf7a4.jpg" data-title="My first Caption" data-lightbox="Vacation"><img src="images/fotoart/studijsko/a13ee5f7-9643-4acf-a141-2ad2d6caf7a4.jpg" class="img-rounded img-responsive"></a> </div> <div class="col-xs-4"> <a href="images/fotoart/studijsko/c18a26f8-2115-427f-a5fc-908e40dc46e1.jpg" data-title="My first Caption" data-lightbox="Vacation"><img src="images/fotoart/studijsko/c18a26f8-2115-427f-a5fc-908e40dc46e1.jpg" class="img-rounded img-responsive"></a> </div> </div> <div class="row"> <div class="col-xs-4"> <a href="images/fotoart/studijsko/Capture.PNG" data-title="My first Caption" data-lightbox="Vacation"><img src="images/fotoart/studijsko/Capture.PNG" class="img-rounded img-responsive"></a> </div> <div class="col-xs-4"> <a href="images/fotoart/studijsko/cb32f172-af2e-4ffe-a291-0ff695630921.jpg" data-title="My first Caption" data-lightbox="Vacation"><img src="images/fotoart/studijsko/cb32f172-af2e-4ffe-a291-0ff695630921.jpg" class="img-rounded img-responsive"></a> </div> <div class="col-xs-4"> <a href="images/fotoart/studijsko/f694f0ce-3851-48ee-9ad6-a7c89439e05e.jpg" data-title="My first Caption" data-lightbox="Vacation"><img src="images/fotoart/studijsko/f694f0ce-3851-48ee-9ad6-a7c89439e05e.jpg" class="img-rounded img-responsive"></a> </div> </div> </div> </div> </div>  </div>
+
+
+<div id="sedamnaest">
+	<div class="sidebar16"> <h4> studio</h4></div>
+	<div class="sidebar17"> <h4> outdoor</h4></div>
+	<div class="sidebar18"> <h4> proizvodi</h4></div>
+</div>
+
+<div id="ispodsedamnaest" class="row"> <div class="chs col-sm-12"> <div class="chs-content"> <h3>Fotografisanje na terenu</h3> <p>Zelite da budete zapazeni? Zelite da vase fotografije budu filmske i da ljudi budu odusevljeni njima? <strong>Odaberite lokaciju</strong> i zamislite kako bi zeleli da to izgleda, ostalo je nas posao. U najkracem mogucem roku cete dobiti zeljene fotografije! </p> <div class="row"> <div class="napolje"> <div class="col-xs-2"> <a href="images/fotoart/teren/1.jpg" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/teren/1.jpg" class="img-rounded img-responsive"></a> </div> <div class="col-xs-2"> <a href="images/fotoart/teren/2.jpg" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/teren/2.jpg" class="img-rounded img-responsive"></a> </div> <div class="col-xs-2"> <a href="images/fotoart/teren/3.jpg" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/teren/3.jpg" class="img-rounded img-responsive"></a> </div> <div class="col-xs-2"> <a href="images/fotoart/teren/4.jpg" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/teren/4.jpg" class="img-rounded img-responsive"></a> </div> <div class="col-xs-2"> <a href="images/fotoart/teren/5.jpg" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/teren/5.jpg" class="img-rounded img-responsive"></a> </div> <div class="col-xs-2"> <a href="images/fotoart/teren/6.jpg" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/teren/6.jpg" class="img-rounded img-responsive"></a> </div> <div> </div> </div> </div> <div class="row"> <div class="napolje"> <div class="col-xs-2"> <a href="images/fotoart/teren/7.jpg" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/teren/7.jpg" class="img-rounded img-responsive"></a> </div> <div class="col-xs-2"> <a href="images/fotoart/teren/8.jpg" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/teren/8.jpg" class="img-rounded img-responsive"></a> </div> <div class="col-xs-2"> <a href="images/fotoart/teren/9.jpg" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/teren/9.jpg" class="img-rounded img-responsive"></a> </div> <div class="col-xs-2"> <a href="images/fotoart/teren/10.jpg" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/teren/10.jpg" class="img-rounded img-responsive"></a> </div> <div class="col-xs-2"> <a href="images/fotoart/teren/11.jpg" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/teren/11.jpg" class="img-rounded img-responsive"></a> </div> <div class="col-xs-2"> <a href="images/fotoart/teren/12.jpg" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/teren/12.jpg" class="img-rounded img-responsive"></a> </div> <div> </div> </div> </div> <div class="row"> <div class="napolje"> <div class="col-xs-2"> <a href="images/fotoart/teren/13.png" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/teren/13.png" class="img-rounded img-responsive"></a> </div> <div class="col-xs-2"> <a href="images/fotoart/teren/14.png" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/teren/14.png" class="img-rounded img-responsive"></a> </div> <div class="col-xs-2"> <a href="images/fotoart/teren/15.png" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/teren/15.png" class="img-rounded img-responsive"></a> </div> <div class="col-xs-2"> <a href="images/fotoart/teren/16.png" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/teren/16.png" class="img-rounded img-responsive"></a> </div> <div class="col-xs-2"> <a href="images/fotoart/teren/17.png" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/teren/17.png" class="img-rounded img-responsive"></a> </div> <div class="col-xs-2"> <a href="images/fotoart/teren/18.png" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/teren/18.png" class="img-rounded img-responsive"></a> </div> <div> </div> </div> </div> </div> </div> </div>
+
+<div id="osamnaest">
+	<div class="sidebar16"> <h4> studio</h4></div>
+	<div class="sidebar17"> <h4> outdoor</h4></div>
+	<div class="sidebar18"> <h4> proizvodi</h4></div>
+</div>
+
+<div id="ispodosamnaest" class="row"> <div class="chs col-sm-12"> <div class="chs-content"> <h3>Fotografisanje proizvoda</h3> <p>Drzite prodavnicu, kafic ili magacin robe? Planirate da otvorite online prodavnicu, ali nemate ideju kako da najlepse predstavite sve vase proizvode? Mozaik Studio vam nudi unikatno resenje. Dolazimo na vasu adresu sa nasom najmodernijom fotografskom opremom da zajedno predstavimo vase prozivode na najelpsi i najkvalitetniji moguci nacin. </p> <div class="row"> <div class="napolje"> <div class="slidza col-xs-4"> <a href="images/fotoart/proizvodi/1.jpg" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/proizvodi/1.jpg" class="img-rounded img-responsive"></a> </div> <div class="slidza col-xs-4"> <a href="images/fotoart/proizvodi/2.jpg" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/proizvodi/2.jpg" class="img-rounded img-responsive"></a> </div> <div class="slidza col-xs-4"> <a href="images/fotoart/proizvodi/3.jpg" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/proizvodi/3.jpg" class="img-rounded img-responsive"></a> </div> <div class="slidza col-xs-4"> <a href="images/fotoart/proizvodi/4.jpg" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/proizvodi/4.jpg" class="img-rounded img-responsive"></a> </div> <div class="slidza col-xs-4"> <a href="images/fotoart/proizvodi/5.jpg" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/proizvodi/5.jpg" class="img-rounded img-responsive"></a> </div> <div class="slidza col-xs-4"> <a href="images/fotoart/proizvodi/6.jpg" data-title="Fotografisanje na terenu" data-lightbox="Vacation"><img src="images/fotoart/proizvodi/6.jpg" class="img-rounded img-responsive"></a> </div> </div> </div> </div> </div> </div>
+
+
+
+<!--    					KRAJ FOTO ART a								-->
+
+
+
+
+
+<!-- 			   		 	     KONTAKT 				-->
+
+<div id="map">
+
+
+</div>
+<div id="map-overlay">
+	<div class="container-fluid"><div class="row">
+
+
+		<div class="contact-info col-xs-12">
+
+			<h1> Osnovni podaci:</h1>
+			<p> Vlasnik: Amel Mavric </p>
+			<p> Telefon: 065412456 </p>
+			<p>Adresa: Rifata Burdzovica</p>
+			<p> e-mail: vlasnik@mozaik.rs </p>
+			<p> Radno Vreme: 8-20 </p>
+
+			<div class="socialn">
+				<p>Pratite nas na:</p>
+				<a href="#"><img src="images/social/insta.png" class="img-responsive"> </a>
+				<a href="#"><img src="images/social/s_3.png" class="img-responsive"></a>
+				<a href="#"> <img src="images/social/twitter.png" class="img-responsive"></a>
+
+			</div>
+
+		</div>
+		<div class="contact-form col-xs-12">
+
+			<form role="form">
+
+				<div class="form-group">
+					<label for="email">Email: </label>
+					<input type="email" class="form-control" id="email" name="email" placeholder="example@example.com"/>
+
+				</div>
+
+				<div class="form-group">
+					<label for="name">Ime: </label>
+					<input type="text" class="form-control" id="name" name="name" placeholder="Amel Muminovic"/>
+
+				</div>
+
+				<div class="form-group">
+					<label for="message">Poruka: </label>
+					<textarea class="form-control" id="message" name="message" placeholder="Your Message"></textarea>
+
+				</div>
+
+				<button type="submit" id="dugme" class="btn btn-default">Posalji Poruku</button>
+
+
+
+
+			</form>
+
+		</div>
+
+
+
+		</div></div>
+
+
+
+</div>
+<a href="#mobilni"> <div  class="anchor"> <img src="images/direction_arrow_green_up.png"</div></a>
+	<!-- 			   		 	  kraj KONTAKT 				-->
+
+
+
+	</div>
+
+   
+   
+   
+   
+    
+    
+<!-- scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+<script src="js/app.js"></script>
+
+
+
+<!--<script src="js/script.js"></script>-->
+<script src="js/jasammapa.js"></script>	
+<!--<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLTDq46sEqP01bV-SUcFtUB4DsTVjykms&callback=initMap">
+    </script>-->
+<!--<script src="js/gallery.js"></script>-->
+
+
+    
+    
+<script>
+    
+  
+    
+    </script>
+    
+
+
+</body>
+<!-- scripts containing the routed blocks , in order to avoid using servers and posting web site like front end-->
+<script type="text/ng-template" id="main.html">
+	
+
+
+
+
+   <div class="text text-hidden">
+        <h1>Welcome to mozaik.rs</h1>
+        
+        <div id="carousel-example" class="stoposto carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides --> 
+ 
+    <div class="slajds row">
+        <div class="ovobre col-xs-offset-3 col-xs-6">
+            <div class="carousel-inner">
+                <div class="item active">
+                  <div class="text-slidera carousel-content">
+                    <div class="elma">
+                        <p>Kreativna Biznis i Marketing Agencija </p>
+                        
+                    </div>
+                      <div class="readx"> <a class="rmore" href="#/mozaik">Read more...</a></div>
+                  </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-content">
+                        <div class="elma">
+                            <p>Ozbiljan tim mladih i kreativnih ljudi!  </p>
+                               
+                        </div>
+                        <div class="readx">
+                             <a class="rmore" href="#/mozaik">Read more...</a></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-content">
+                        <div class="elma">                            
+                            <p>Saradnja sa nama garantuje uspeh!  </p>
+                                
+                        </div>
+                        <div class="readx"> <a class="rmore" href="#/mozaik">Read more...</a></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Controls --> <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+ <a class="right carousel-control" href="#carousel-example" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+
+</div>
+        
+    </div>
+
+
+ 
+ 
+
+</script>
+
+<script type="text/ng-temlate" id="contact.html">
+    <div id="map">
+                
+            
+    </div>    
+    <div id="map-overlay">
+            
+
+</script>
+
+    
+
+</html>
